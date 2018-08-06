@@ -126,7 +126,7 @@ class Command(BaseCommand):
                 self.extract_fields(item)
         app_list = self.dump_list.model_list()
         obj_list = []
-        ordered = sort_dependencies(app_list.items())
+        ordered = serializers.sort_dependencies(app_list.items())
         explored = []
         for item in ordered:
             if item not in explored:
