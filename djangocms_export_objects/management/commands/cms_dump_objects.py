@@ -5,7 +5,6 @@ from distutils.version import LooseVersion
 from django.db import models, DEFAULT_DB_ALIAS
 from django.core.exceptions import ImproperlyConfigured
 from django.core.management.base import BaseCommand, CommandError
-from django.core.management.commands.dumpdata import sort_dependencies
 from django.core import serializers
 from django.contrib.contenttypes.models import ContentType
 from django.utils.datastructures import SortedDict
